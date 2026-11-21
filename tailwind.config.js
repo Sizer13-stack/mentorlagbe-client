@@ -1,0 +1,66 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./app/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ["'Bricolage Grotesque'", "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ["Figtree", "ui-sans-serif", "system-ui", "sans-serif"],
+      },
+    },
+  },
+  plugins: [require("daisyui")],
+  daisyui: {
+    logs: false,
+    darkTheme: "mentordark",
+    themes: [
+      {
+        mentor: {
+          primary: "#0b6b57",
+          "primary-content": "#ffffff",
+          secondary: "#e4572e",
+          "secondary-content": "#ffffff",
+          accent: "#f5b83d",
+          "accent-content": "#1c2b27",
+          neutral: "#12302a",
+          "neutral-content": "#f1f6f4",
+          "base-100": "#ffffff",
+          "base-200": "#f3f7f5",
+          "base-300": "#dfe8e4",
+          "base-content": "#17302a",
+          info: "#2b7bd6",
+          success: "#1b9a5b",
+          warning: "#d99a12",
+          error: "#d6334d",
+          "--rounded-box": "0.9rem",
+          "--rounded-btn": "0.6rem",
+          "--rounded-badge": "0.5rem",
+        },
+      },
+      {
+        mentordark: {
+          "color-scheme": "dark",
+          primary: "#2fb58f",
+          "primary-content": "#06201a",
+          secondary: "#f0734f",
+          "secondary-content": "#220b04",
+          accent: "#f5b83d",
+          "accent-content": "#1c2b27",
+          neutral: "#0a1c18",
+          "neutral-content": "#e4efeb",
+          "base-100": "#0f211d",
+          "base-200": "#0a1815",
+          "base-300": "#1b332d",
+          "base-content": "#e4efeb",
+          info: "#5aa5f0",
+          success: "#3cc686",
+          warning: "#f0b53c",
+          error: "#f0657b",
+          "--rounded-box": "0.9rem",
+          "--rounded-btn": "0.6rem",
+          "--rounded-badge": "0.5rem",
+        },
+      },
+    ],
+  },
+};
