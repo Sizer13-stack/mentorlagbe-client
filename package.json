@@ -1,0 +1,27 @@
+{
+  "name": "mentorlagbe-client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "better-auth": "^1.7.27",
+    "framer-motion": "^14.14.0",
+    "jose": "^6.2.18",
+    "lucide-react": "^0.454.0",
+    "mongodb": "^7.9.1",
+    "next": "^14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sonner": "^2.0.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.7.0",
+    "daisyui": "^4.12.24",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^3.4.19"
+  }
+}
